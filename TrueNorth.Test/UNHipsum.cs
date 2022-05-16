@@ -43,7 +43,7 @@ namespace TrueNorth.Test
         {
             var a = new Hipsum();
 
-            var b = a.GetMany(client, null);
+            var b = a.GetMany(client, 0);
 
             Assert.IsNotNull(b);
             Assert.AreEqual(3, b.Count);
